@@ -1,0 +1,56 @@
+body {
+    background-color: #e0f7fa; /* Lichtblauwe achtergrond */
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 1000px; /* Breder dan voorheen */
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff; /* Witte achtergrond voor de container */
+    border: 2px solid #00796b; /* Groene rand */
+    border-radius: 10px;
+}
+
+h1, h2, h3 {
+    color: #00796b; /* Groene kleur voor titels */
+}
+
+.input-section, .attendance-section, .result-section {
+    margin: 20px 0;
+}
+
+.building-info {
+    background-color: #c1e1e1; /* Lichtgroen kader */
+    border: 1px solid #00796b;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.quorum {
+    background-color: #f0f4f8; /* Lichtblauwe achtergrond voor quorums */
+    border: 1px solid #00796b;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#owner-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#owner-table th, #owner-table td {
+    border: 1px solid #00796b;
+    padding: 8px;
+    text-align: left;
+}
+
+.calculate-button {
+    background-color: #009688; /* Gebruik de kleur van je logo */
+    color: white;
+    border: none;
+    padding: 8px 16px; /* Kleinere padding voor een gestroomlijnde uitstraling */
+    border-radius: 25px; /* Ronde chipvorm */
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 10px rgba(0, 0, 

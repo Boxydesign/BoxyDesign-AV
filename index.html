@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boxydesign AV Quorum en Stemming</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Boxydesign Algemene Vergadering</h1>
+        
+        <div class="input-section">
+            <input type="file" id="file-upload" accept=".csv">
+            <button onclick="processFile()">Verwerk Bestand</button>
+        </div>
+        
+        <div class="attendance-section">
+            <h2>Markeer Aanwezige Eigenaren</h2>
+            <table id="owner-table">
+                <thead>
+                    <tr>
+                        <th>Apartement</th>
+                        <th>Naam</th>
+                        <th>Aandelen</th>
+                        <th>Aanwezig</th>
+                    </tr>
+                </thead>
+                <tbody id="owner-list"></tbody>
+            </table>
+            <button class="calculate-button" onclick="calculateQuorum()">👉 Bereken Quorum</button>
+        </div>
+        
+        <div class="building-info">
+            <h2>Gegevens Gebouw</h2>
+            <p>Aantal Eigenaars: <span id="total-owners">0</span></p>
+            <p>Totaal Aantal Aandelen: <span id="total-shares">0</span></p>
+        </div>
+        
+        <div class="result-section">
+            <h2>Resultaten</h2>
+            <p id="quorum-results"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
